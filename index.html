@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SimplyFresh Limited</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f5f7;
+      margin: 0;
+      padding: 0;
+      color: #1c1c1e;
+    }
+    header {
+      background: #34c759;
+      color: white;
+      padding: 2em 1em 1em;
+      text-align: center;
+      border-radius: 0 0 2em 2em;
+    }
+    header img {
+      max-width: 100px;
+      margin-bottom: 0.5em;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      background: white;
+      padding: 1em;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #ccc;
+    }
+    nav a {
+      text-decoration: none;
+      color: #34c759;
+      font-weight: 600;
+      font-size: 1em;
+    }
+    .mobile-menu {
+      display: none;
+    }
+    section {
+      padding: 2em 1.5em;
+      margin: 1em auto;
+      background: white;
+      border-radius: 1.5em;
+      max-width: 800px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #34c759;
+      font-size: 1.5em;
+    }
+    ul li {
+      margin: 0.5em 0;
+      padding-left: 1em;
+      position: relative;
+    }
+    ul li::before {
+      content: "\1F342 ";
+      position: absolute;
+      left: 0;
+    }
+    a {
+      color: #34c759;
+    }
+    footer {
+      background: #1c1c1e;
+      color: white;
+      text-align: center;
+      padding: 1.5em;
+      margin-top: 2em;
+      border-radius: 2em 2em 0 0;
+    }
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+      .mobile-menu {
+        display: block;
+        background-color: #34c759;
+        color: white;
+        padding: 1em;
+        text-align: right;
+        font-size: 1.5em;
+        cursor: pointer;
+      }
+      .mobile-nav-links {
+        display: none;
+        background: white;
+        text-align: center;
+        padding: 1em;
+        border-bottom: 1px solid #ccc;
+      }
+      .mobile-nav-links a {
+        display: block;
+        margin: 0.5em 0;
+        color: #34c759;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      const links = document.getElementById('mobileNavLinks');
+      links.style.display = links.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Green_leaf_icon.svg" alt="Logo" />
+    <h1>SimplyFresh Limited</h1>
+    <p>Your favorite Ro-Store experience!</p>
+  </header>
+
+  <div class="mobile-menu" onclick="toggleMenu()">☰</div>
+  <div class="mobile-nav-links" id="mobileNavLinks">
+    <a href="#about">About Us</a>
+    <a href="#rules">Rules</a>
+    <a href="#links">Links</a>
+  </div>
+
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#rules">Rules</a>
+    <a href="#links">Links</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to SimplyFresh Limited, your premium Ro-Store destination on Roblox. We are passionate about delivering high-quality products, unique designs, and an enjoyable shopping experience to our community. Whether you're a frequent shopper or a curious visitor, we aim to serve you with excellence and creativity every step of the way. Our branding is inspired by freshness, nature, and a vibrant green aesthetic.</p>
+  </section>
+
+  <section id="rules">
+    <h2>Rules</h2>
+    <ul>
+      <li>Be respectful to all members and staff.</li>
+      <li>Do not spam or advertise other groups/servers.</li>
+      <li>Follow all Roblox community guidelines and Discord Terms of Service.</li>
+      <li>Report any inappropriate behavior to a moderator or admin.</li>
+      <li>Use appropriate channels for inquiries or help.</li>
+    </ul>
+  </section>
+
+  <section id="links">
+    <h2>Links</h2>
+    <p><a href="https://www.roblox.com/communities/34810273/Simply-Fresh-Corportation#!/about" target="_blank">🌿 Roblox Group</a></p>
+    <p><a href="https://discord.gg/MA3baX3Q3d" target="_blank">🌿 Discord Server</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SimplyFresh Limited. All rights reserved.</p>
+  </footer>
+</body>
+</html>
